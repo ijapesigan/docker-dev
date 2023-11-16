@@ -14,6 +14,11 @@ function apt_install() {
     fi
 }
 
+# package dependencies
+apt_install              \
+  libgraphicsmagick1-dev \
+  libpoppler-cpp-dev
+
 # personal apt packages
 apt_install        \
     bat            \
