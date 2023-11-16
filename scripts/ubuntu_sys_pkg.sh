@@ -15,8 +15,8 @@ function apt_install() {
 }
 
 # package dependencies
-apt_install              \
-  libgraphicsmagick1-dev \
+apt_install           \
+  libmagick++-dev     \
   libpoppler-cpp-dev
 
 # personal apt packages
