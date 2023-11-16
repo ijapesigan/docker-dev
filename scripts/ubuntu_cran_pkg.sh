@@ -1,0 +1,40 @@
+#!/bin/bash
+
+set -e
+
+## development packages and cran packages
+install2.r --error --skipinstalled -n -1 \
+    covr           \
+    devtools       \
+    distro         \
+    ggplot2        \
+    knitr          \
+    lintr          \
+    magick         \
+    markdown       \
+    microbenchmark \
+    pdftools       \
+    pkgdown        \
+    printr         \
+    ragg           \
+    RefManageR     \
+    remotes        \
+    rmarkdown      \
+    rprojroot      \
+    styler         \
+    testthat       \
+    tidyverse      \
+    qpdf           \
+    quarto         \
+    semmcci        \
+    betaDelta      \
+    betaSandwich   \
+    betaNB         \
+    betaMC
+
+# vscode project dependencies
+install2.r --error --skipmissing --skipinstalled -n -1 \
+  languageserver \
+  httpgd         \
+  styler         \
+  lintr
