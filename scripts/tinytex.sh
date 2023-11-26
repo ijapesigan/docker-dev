@@ -10,11 +10,15 @@ install2.r --error --skipinstalled -n -1 \
 # https://github.com/rstudio/tinytex-releases/issues/37
 
 # install tinytex package
-R -e "try(tinytex::install_tinytex( \
-    bundle = 'TinyTeX',       \
-    force = TRUE,               \
-    dir =  '/opt/TinyTeX'       \
-))"
+R -e "                        \
+  try(                        \
+    tinytex::install_tinytex( \
+      bundle = 'TinyTeX',   \
+      force = TRUE,           \
+      dir =  '/opt/TinyTeX'   \
+    )                         \
+  )                           \
+"
 
 # Check tinytex
 echo -e "Check tinytex...\n"
