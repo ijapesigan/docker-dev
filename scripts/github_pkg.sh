@@ -15,6 +15,7 @@ R -e "remotes::install_github(       \
         'jeksterslab/betaNB',        \
         'jeksterslab/betaMC',        \
         'jeksterslab/simStateSpace', \
-        'ijapesigan/fitOU'           \
+        'ijapesigan/fitOU',          \
+        'ijapesigan/cTMed'           \
     )                                \
 )"
