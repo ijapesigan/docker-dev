@@ -49,3 +49,7 @@ ls -l /usr/local/bin/pfetch
 # clang-format
 apt_install        \
   clang-format
+
+# convert pdf to png
+apt_install        \
+    poppler-utils
