@@ -8,4 +8,6 @@ R -e "remotes::install_github(      \
     )                               \
 )"
 
+R -e "library(rProject)"
+
 echo -e "\nInstall rProject, done!"
