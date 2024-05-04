@@ -7,7 +7,6 @@ R -e "remotes::install_github(       \
         'rstudio/tinytex',           \
         'r-lib/cli',                 \
         'r-lib/devtools',            \
-        'r-hub/rhub',                \
         'ijapesigan/rProject',       \
         'jeksterslab/semmcci',       \
         'jeksterslab/betaDelta',     \
