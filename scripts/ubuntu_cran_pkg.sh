@@ -18,6 +18,7 @@ install2.r --error --skipinstalled -n -1 \
     printr         \
     ragg           \
     RefManageR     \
+    rhub           \
     remotes        \
     rmarkdown      \
     rprojroot      \
