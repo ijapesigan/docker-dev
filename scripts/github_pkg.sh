@@ -14,6 +14,9 @@ R -e "remotes::install_github(       \
         'jeksterslab/betaNB',        \
         'jeksterslab/betaMC',        \
         'jeksterslab/simStateSpace', \
-        'jeksterslab/cTMed'          \
+        'jeksterslab/cTMed',         \
+        'jeksterslab/fitDTVARMx',    \
+        'jeksterslab/fitCTVARMx',    \
+        'jeksterslab/metaVAR'        \
     )                                \
 )"
