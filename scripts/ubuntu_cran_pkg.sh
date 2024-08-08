@@ -22,12 +22,15 @@ install2.r --error --skipinstalled -n -1 \
     remotes        \
     rmarkdown      \
     rprojroot      \
+    shiny          \
     styler         \
     testthat       \
     tidyverse      \
     qpdf           \
     quarto         \
+    withr          \
     semmcci        \
+    simStateSpace  \
     betaDelta      \
     betaSandwich   \
     betaNB         \
