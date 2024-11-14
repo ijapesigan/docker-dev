@@ -1,7 +1,7 @@
 ijapesigan/dev
 ================
 Ivan Jacob Agaloos Pesigan
-2024-10-31
+2024-11-14
 
 <!-- README.md is generated from .setup/readme/README.Rmd. Please edit that file -->
 
@@ -13,6 +13,8 @@ Project](https://github.com/ijapesigan/docker-dev/actions/workflows/make.yml/bad
 \[multi\]](https://github.com/ijapesigan/docker-dev/actions/workflows/docker-build-push-multi.yml/badge.svg)](https://github.com/ijapesigan/docker-dev/actions/workflows/docker-build-push-multi.yml)
 [![Docker Build and Push Dev \[multi\]
 (Daily)](https://github.com/ijapesigan/docker-dev/actions/workflows/docker-build-push-daily-multi-dev.yml/badge.svg)](https://github.com/ijapesigan/docker-dev/actions/workflows/docker-build-push-daily-multi-dev.yml)
+[![Docker Build and Push Dev \[amd64\]
+(Daily)](https://github.com/ijapesigan/docker-dev/actions/workflows/docker-build-push-daily-amd64-dev.yml/badge.svg)](https://github.com/ijapesigan/docker-dev/actions/workflows/docker-build-push-daily-amd64-dev.yml)
 [![Shell
 Check](https://github.com/ijapesigan/docker-dev/actions/workflows/shellcheck.yml/badge.svg)](https://github.com/ijapesigan/docker-dev/actions/workflows/shellcheck.yml)
 <!-- badges: end -->
