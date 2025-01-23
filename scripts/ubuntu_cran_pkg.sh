@@ -31,7 +31,6 @@ install2.r --error --skipinstalled -n -1 \
     withr          \
     semmcci        \
     simStateSpace  \
-    bootStateSpace \
     betaDelta      \
     betaSandwich   \
     betaNB         \
