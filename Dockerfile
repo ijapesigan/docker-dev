@@ -1,4 +1,4 @@
-FROM ijapesigan/missing:main
+FROM ijapesigan/missing:latest
 
 ADD scripts /usr/src/local/src
 RUN cd /usr/src/local/src     && \
