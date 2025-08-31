@@ -3,7 +3,7 @@
 set -e
 
 ## development packages and cran packages
-install2.r --error --skipinstalled -n -1 \
+install2.r --error --skipmissing --skipinstalled -n -1 \
     covr           \
     devtools       \
     distro         \
@@ -21,6 +21,7 @@ install2.r --error --skipinstalled -n -1 \
     rhub           \
     remotes        \
     rmarkdown      \
+    roxygen2       \
     rprojroot      \
     shiny          \
     styler         \
