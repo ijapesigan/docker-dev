@@ -1,4 +1,4 @@
-name: Non-ASCII check
+name: Non-ASCII Check
 
 on:
   workflow_run:
