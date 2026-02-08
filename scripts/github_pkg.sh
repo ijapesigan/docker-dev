@@ -21,6 +21,7 @@ R -e "remotes::install_github(        \
         'jeksterslab/cTMed',          \
         'jeksterslab/dynUtils',       \
         'jeksterslab/fitDTVARMxID',   \
+        'jeksterslab/fitVARMxID',     \
         'jeksterslab/metaVAR',        \
         'jeksterslab/metaDyn'         \
     )                                 \
