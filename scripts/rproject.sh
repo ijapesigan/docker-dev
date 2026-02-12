@@ -10,6 +10,7 @@ install2.r --error --skipinstalled -n -1 \
     distro      \
     knitr       \
     lintr       \
+    pak         \
     pkgdown     \
     quarto      \
     Rcpp        \
@@ -23,6 +24,16 @@ install2.r --error --skipinstalled -n -1 \
     tinytex     \
     utils       \
     testthat
+
+R -e "install.packages(                                   \
+       'pak',                                             \
+       repos = sprintf(                                   \
+         'https://r-lib.github.io/p/pak/stable/%s/%s/%s', \
+         .Platform$pkgType,                               \
+         R.Version()$os,                                  \
+         R.Version()$arch                                 \
+       )                                                  \
+     )"
 
 R -e "remotes::install_github(      \
     c(                              \
