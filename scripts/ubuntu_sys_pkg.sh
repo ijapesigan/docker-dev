@@ -41,10 +41,23 @@ tar xf lazygit.tar.gz lazygit
 install lazygit /usr/local/bin
 rm -rf lazygit*
 
-# pfetch
-git clone https://github.com/dylanaraps/pfetch.git
-install pfetch/pfetch /usr/local/bin/
-ls -l /usr/local/bin/pfetch
+# fastfetch
+apt_install        \
+    fastfetch
+
+tmpdir="$(mktemp -d)"
+trap 'rm -rf "$tmpdir"' EXIT
+
+git clone --depth 1 https://github.com/fastfetch-cli/fastfetch.git "$tmpdir/fastfetch"
+
+cd "$tmpdir/fastfetch"
+
+cmake -S . -B build
+cmake --build build --target fastfetch
+
+install -Dm755 build/fastfetch /usr/local/bin/fastfetch
+
+ls -l /usr/local/bin/fastfetch
 
 # clang-format
 apt_install        \
