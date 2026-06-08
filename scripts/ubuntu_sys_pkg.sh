@@ -42,9 +42,6 @@ install lazygit /usr/local/bin
 rm -rf lazygit*
 
 # fastfetch
-apt_install        \
-    fastfetch
-
 tmpdir="$(mktemp -d)"
 trap 'rm -rf "$tmpdir"' EXIT
 
