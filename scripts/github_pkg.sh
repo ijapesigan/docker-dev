@@ -20,6 +20,7 @@ R -e "remotes::install_github(        \
         'jeksterslab/bootStateSpace', \
         'jeksterslab/cTMed',          \
         'jeksterslab/dynUtils',       \
+        'jeksterslab/dynTools',       \
         'jeksterslab/fitVARMxID',     \
         'jeksterslab/metaDyn'         \
     )                                 \
