@@ -149,3 +149,10 @@ jobs:
             -H "Accept: application/vnd.github+json" \
             https://api.github.com/repos/ijapesigan/docker-docs/dispatches \
             -d '{"event_type":"base-image-built"}'
+      - name: Trigger the next image
+        run: |
+          curl -fsS -X POST \
+            -H "Authorization: Bearer ${{ secrets.PAT }}" \
+            -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/ijapesigan/docker-rocker/dispatches \
+            -d '{"event_type":"base-image-built"}'

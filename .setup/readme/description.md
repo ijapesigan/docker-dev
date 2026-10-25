@@ -1,0 +1,1 @@
+The development image of the daily chain (`ijapesigan/tidyverse` to `ijapesigan/docs`): built on `ijapesigan/missing`, with the R development tools and rProject. When its daily build succeeds it starts `ijapesigan/docs` and `ijapesigan/rocker`.

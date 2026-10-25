@@ -1,0 +1,19 @@
+# System packages wanted, one per line (install-apt.sh): tools, and
+# libraries no R package declares. R packages' system libraries are
+# looked up by install-cran.sh.
+
+# tools
+bat
+clang-format
+curl
+git
+git-lfs
+less
+nnn
+openssh-server
+parallel
+poppler-utils
+rsync
+tmux
+vim
+wget

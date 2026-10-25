@@ -29,7 +29,10 @@ workflow_daily <- "dev"
 
 workflow_title <- "Docker Build and Push Dev [multi] (Daily)"
 
-workflow_next <- "ijapesigan/docker-docs"
+workflow_next <- c(
+  "ijapesigan/docker-docs",
+  "ijapesigan/docker-rocker"
+)
 
 rproject_ver <- NULL
 
