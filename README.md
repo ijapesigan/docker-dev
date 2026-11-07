@@ -6,17 +6,11 @@ scripts/github.txt, or .setup/scripts/project.R instead. -->
 # ijapesigan/dev
 
 <!-- badges: start -->
-
-[![Docker Build and Push Dev \[multi\]
-(Daily)](https://github.com/ijapesigan/docker-dev/actions/workflows/docker-build-push-daily-multi-dev.yml/badge.svg)](https://github.com/ijapesigan/docker-dev/actions/workflows/docker-build-push-daily-multi-dev.yml)
-[![Docker Build and Push
-\[multi\]](https://github.com/ijapesigan/docker-dev/actions/workflows/docker-build-push-multi.yml/badge.svg)](https://github.com/ijapesigan/docker-dev/actions/workflows/docker-build-push-multi.yml)
-[![Make
-Project](https://github.com/ijapesigan/docker-dev/actions/workflows/make.yml/badge.svg)](https://github.com/ijapesigan/docker-dev/actions/workflows/make.yml)
-[![Non-ASCII
-Check](https://github.com/ijapesigan/docker-dev/actions/workflows/non-ascii-check.yml/badge.svg)](https://github.com/ijapesigan/docker-dev/actions/workflows/non-ascii-check.yml)
-[![Shell
-Check](https://github.com/ijapesigan/docker-dev/actions/workflows/shellcheck.yml/badge.svg)](https://github.com/ijapesigan/docker-dev/actions/workflows/shellcheck.yml)
+[![Make Project](https://github.com/ijapesigan/docker-dev/actions/workflows/make.yml/badge.svg)](https://github.com/ijapesigan/docker-dev/actions/workflows/make.yml)
+[![Docker Build and Push Dev [multi] (Daily)](https://github.com/ijapesigan/docker-dev/actions/workflows/docker-build-push-daily-multi-dev.yml/badge.svg)](https://github.com/ijapesigan/docker-dev/actions/workflows/docker-build-push-daily-multi-dev.yml)
+[![Docker Build and Push [multi]](https://github.com/ijapesigan/docker-dev/actions/workflows/docker-build-push-multi.yml/badge.svg)](https://github.com/ijapesigan/docker-dev/actions/workflows/docker-build-push-multi.yml)
+[![Non-ASCII Check](https://github.com/ijapesigan/docker-dev/actions/workflows/non-ascii-check.yml/badge.svg)](https://github.com/ijapesigan/docker-dev/actions/workflows/non-ascii-check.yml)
+[![Shell Check](https://github.com/ijapesigan/docker-dev/actions/workflows/shellcheck.yml/badge.svg)](https://github.com/ijapesigan/docker-dev/actions/workflows/shellcheck.yml)
 <!-- badges: end -->
 
 ## Description
@@ -49,7 +43,7 @@ apptainer shell dev.sif
 
 R packages from CRAN (`scripts/cran.txt`), with their dependencies:
 
-covr, devtools, distro, ggplot2, knitr, lintr, magick, markdown,
+bench, covr, devtools, distro, ggplot2, knitr, lintr, magick, markdown,
 microbenchmark, pdftools, pkgdown, printr, ragg, RefManageR, rhub,
 remotes, rmarkdown, roxygen2, rprojroot, shiny, styler, testthat,
 tidyverse, qpdf, quarto, withr, semmcci, simStateSpace, bootStateSpace,

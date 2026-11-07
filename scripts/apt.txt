@@ -5,6 +5,8 @@
 # tools
 bat
 clang-format
+clang-tidy
+cpplint
 curl
 git
 git-lfs
@@ -13,6 +15,7 @@ nnn
 openssh-server
 parallel
 poppler-utils
+qpdf
 rsync
 tmux
 vim

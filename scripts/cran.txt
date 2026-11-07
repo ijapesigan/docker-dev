@@ -1,6 +1,7 @@
 # CRAN packages wanted, one per line, never their dependencies
 # (install-cran.sh; their system libraries are looked up by pak)
 
+bench
 covr
 devtools
 distro
