@@ -14,6 +14,7 @@ pkgs=(
     jeksterslab/semmcci
     jeksterslab/betaDelta
     jeksterslab/betaSandwich
+    jeksterslab/betaLB
     jeksterslab/betaNB
     jeksterslab/betaMC
     jeksterslab/simStateSpace
