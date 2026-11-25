@@ -1,4 +1,4 @@
-.PHONY: all release build clean cleanall cleanpkg cleanproj cleanpush cleantinytex bib bibrproject clone coverage data dependencies readme docs dotfiles aiglobal secretscan verify spec log fixup upload sizecheck public ai manifest install latex lint local localforce pdf pkg pkgdown project push quarto style tinytex tinytexforce vignettes template tree conform upgrade
+.PHONY: all release build clean cleanall cleanpkg cleanproj cleanpush cleantinytex bib bibrproject clone coverage data dependencies readme docs dotfiles aiglobal secretscan verify status spec log fixup upload sizecheck public ai manifest install latex lint local localforce pdf pkg pkgdown project push quarto style tinytex tinytexforce vignettes template tree conform upgrade
 
 push: build docs latex coverage cleanpush
 
@@ -122,6 +122,10 @@ verify:
 	@bash .setup/scripts/verify.sh || echo "\n\nWARNING: .verify was not updated (no SSH here). Run bash .setup/scripts/verify.sh on the host, then make verify again.\n\n"
 	@Rscript -e "rProject::Verify(\"${PWD}\", record = $(or ${RECORD},FALSE))"
 
+status:
+	@echo "\n\nReporting the private and public repositories...\n\n"
+	@SET="$(SET)" bash .setup/scripts/repo-status.sh $(PROJECTS)
+
 # make spec TOPIC=<topic>
 spec:
 	@echo "\n\nCreating a spec...\n\n"
@@ -203,7 +207,7 @@ docs: readme
 	@echo "\n\nBuilding CITATION.cff...\n\n"
 	@Rscript -e "rProject::CFF(\"${PWD}\")"
 
-all: lint build docs latex pkgdown quarto coverage
+all: project lint build docs latex pkgdown quarto coverage
 
 cleanall: clean cleanpush cleanpkg cleantinytex
 
@@ -221,7 +225,7 @@ localforce: project dotfiles
 	@Rscript -e "rProject::InstallLocal(all = TRUE, force = TRUE)"
 	@Rscript .setup/scripts/make-config.R ${PWD}
 
-clone:
+clone: project
 	@bash .setup/scripts/clone.sh
 
 # make all, the secret scan, then make auto (commit, push, tag); it stops at the
